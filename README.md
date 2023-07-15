@@ -65,7 +65,7 @@ docker-compose up -d
 
 ## 安裝 Gitea Actions
 
-從 Gitea 1.19 版本開始，[Gitea Actions][11] 就已經內建在 Gitea 服務中。請打開 `app.ini` 檔案，並增加底下設定
+從 Gitea 1.19 版本開始，[Gitea Actions][11] 就已經內建在 Gitea 服務中。請打開 `config/app.ini` 檔案，並增加底下設定
 
 ```yaml
 [actions]
