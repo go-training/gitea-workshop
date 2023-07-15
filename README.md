@@ -54,3 +54,7 @@ docker-compose up -d
 請點選 3000 port 的連結就可以看到首頁了，請參考底下畫面
 
 ![gitea install page](./images/install-gitea-home.png)
+
+設定 Administrator 帳號，請參考底下畫面
+
+![Alt text](install-gitea-administrator.png)
