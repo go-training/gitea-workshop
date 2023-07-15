@@ -62,3 +62,28 @@ docker-compose up -d
 按下送出後，請等待 Install 過程
 
 ![install process](./images/install-gitea-loading.png)
+
+## 安裝 Gitea Actions
+
+從 Gitea 1.19 版本開始，[Gitea Actions][11] 就已經內建在 Gitea 服務中。請打開 `app.ini` 檔案，並增加底下設定
+
+```yaml
+[actions]
+ENABLED=true
+```
+
+請重新啟動 Gitea 服務
+
+```bash
+docker-compose restart
+```
+
+請點選 `Site Administration`
+
+![click administration link](./images/gitea-administration.png)
+
+點選 Runner Tab 選單
+
+![create runner](./images/create-runner-page.png)
+
+[11]:https://docs.gitea.com/next/usage/actions/overview
