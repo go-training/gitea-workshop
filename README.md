@@ -87,3 +87,24 @@ docker-compose restart
 ![create runner](./images/create-runner-page.png)
 
 [11]:https://docs.gitea.com/next/usage/actions/overview
+
+接著透過 docker compose 來啟動 runner 服務
+
+```yaml
+version: "2"
+
+services:
+  runner:
+    image: gitea/act_runner
+    restart: always
+    volumes:
+      - ./data/act_runner:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - GITEA_INSTANCE_URL=<instance url>
+      - GITEA_RUNNER_REGISTRATION_TOKEN=<registration token>
+```
+
+請將 `<instance url>` 替換成你的 Gitea 服務網址，`<registration token>` 替換成你的 Runner Token。啟動後可以在後台看到底下畫面
+
+![gitea runner list](./images/gitea-runner-list.png)
