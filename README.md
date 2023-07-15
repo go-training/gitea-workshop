@@ -57,4 +57,8 @@ docker-compose up -d
 
 設定 Administrator 帳號，請參考底下畫面
 
-![Alt text](install-gitea-administrator.png)
+![install administrator](install-gitea-administrator.png)
+
+按下送出後，請等待 Install 過程
+
+![install process](./images/install-gitea-loading.png)
