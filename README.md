@@ -7,6 +7,8 @@ Starting with Gitea 1.19,  Gitea Actions are available as a built-in CI/CD solut
 1. 註冊 [Docker Hub][1] 帳號
 2. 登入 [Play With Docker][2] 平台
 
+也可以在 [DigitalOcean](https://cloud.digitalocean.com/) 上建立 Droplet，並安裝 [Docker](https://docs.docker.com/engine/install/ubuntu/).
+
 [1]:https://hub.docker.com/
 [2]:https://labs.play-with-docker.com/
 
