@@ -117,5 +117,3 @@ services:
 請將 `<instance url>` 替換成你的 Gitea 服務網址，`<registration token>` 替換成你的 Runner Token。啟動後可以在後台看到底下畫面
 
 ![gitea runner list](./images/gitea-runner-list.png)
-
-![Alt text](image.png)
