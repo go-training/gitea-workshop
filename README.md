@@ -88,7 +88,16 @@ docker-compose restart
 
 [11]:https://docs.gitea.com/next/usage/actions/overview
 
-接著透過 docker compose 來啟動 runner 服務
+接著透過 docker compose 來啟動 runner 服務，先建立 `gitea` 資料夾，並建立 `docker-compose.yml` 檔案
+
+```bash
+mkdir -p gitea/data
+cd gitea
+touch docker-compose.yml
+sudo chown 1000:1000 data/
+```
+
+打開 `docker-compose.yml` 檔案，輸入以下內容：
 
 ```yaml
 version: "2"
@@ -108,3 +117,5 @@ services:
 請將 `<instance url>` 替換成你的 Gitea 服務網址，`<registration token>` 替換成你的 Runner Token。啟動後可以在後台看到底下畫面
 
 ![gitea runner list](./images/gitea-runner-list.png)
+
+![Alt text](image.png)
