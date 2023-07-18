@@ -28,7 +28,7 @@ version: "2"
 
 services:
   server:
-    image: gitea/gitea:latest-rootless
+    image: gitea/gitea:1.20-rootless
     restart: always
     volumes:
       - ./data:/var/lib/gitea
