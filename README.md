@@ -38,9 +38,11 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - "3000:3000"
+      - "80:3000"
       - "2222:2222"
 ```
+
+你可以將 `3000`, `2222` 替換成你想要的 port。
 
 [3]:https://docs.gitea.com/next/category/installation
 [4]:https://docs.gitea.com/next/installation/install-with-docker-rootless
