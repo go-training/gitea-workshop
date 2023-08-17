@@ -108,7 +108,7 @@ version: "2"
 
 services:
   runner:
-    image: gitea/act_runner:0.2.3
+    image: gitea/act_runner:0.2.5
     restart: always
     volumes:
       - ./data/act_runner:/data
