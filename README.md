@@ -1,6 +1,6 @@
 # gitea-workshop
 
-Starting with Gitea 1.19,  Gitea Actions are available as a built-in CI/CD solution.
+Starting with Gitea 1.20,  Gitea Actions are available as a built-in CI/CD solution.
 
 ## 事前準備
 
