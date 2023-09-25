@@ -122,3 +122,29 @@ services:
 請將 `<instance url>` 替換成你的 Gitea 服務網址，`<registration token>` 替換成你的 Runner Token。啟動後可以在後台看到底下畫面
 
 ![gitea runner list](./images/gitea-runner-list.png)
+
+## 撰寫 Gitea Actions
+
+請建立 `.github/workflows` 資料夾，並建立 `main.yml` 檔案
+
+```bash
+mkdir -p .github/workflows
+```
+
+打開 `main.yml` 檔案，輸入以下內容：
+
+```yaml
+name: CI
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: echo hello world
+        run: |
+          echo "hello world"
+```
+
+請將 `echo hello world` 替換成你想要執行的指令，例如 `npm install` 或 `npm test`。
