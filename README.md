@@ -1,6 +1,6 @@
 # gitea-workshop
 
-Starting with Gitea 1.20,  Gitea Actions are available as a built-in CI/CD solution.
+Starting with Gitea 1.19,  Gitea Actions are available as a built-in CI/CD solution.
 
 ## 事前準備
 
@@ -20,7 +20,8 @@ Starting with Gitea 1.20,  Gitea Actions are available as a built-in CI/CD solut
 mkdir -p gitea/{data,config}
 cd gitea
 touch docker-compose.yml
-sudo chown 1000:1000 config/ data/
+chown 1000:1000 config/ data/
+# or chmod 777 config/ data/
 ```
 
 打開 `docker-compose.yml` 檔案，輸入以下內容：
