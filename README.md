@@ -125,6 +125,10 @@ services:
 
 ## 撰寫 Gitea Actions
 
+由於目前 Repository 預設設定都是關閉的，故需要手動開啟。請打開 Repository，點選 `Settings`，看到左邊選單 Repository，看到右邊設定內找到 `Enable Repository Action` 點選打勾，最後按下儲存即可。
+
+![enable repository action](./images/enable-repository-action.png)
+
 請建立 `.github/workflows` 資料夾，並建立 `main.yml` 檔案
 
 ```bash
