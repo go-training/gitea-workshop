@@ -109,7 +109,7 @@ version: "2"
 
 services:
   runner:
-    image: gitea/act_runner:0.2.5
+    image: gitea/act_runner:0.2.6
     restart: always
     volumes:
       - ./data/act_runner:/data
@@ -141,7 +141,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: echo hello world
         run: |
           echo "hello world"
