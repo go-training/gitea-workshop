@@ -39,7 +39,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - "80:3000"
+      - "3000:3000"
       - "2222:2222"
 ```
 
